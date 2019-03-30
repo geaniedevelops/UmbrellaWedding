@@ -182,7 +182,7 @@ p {
 #event {
     display: flex;
     flex-direction: "row";
-    justify-content: space-evenly;
+    justify-content: center;
     margin: 25px;
 }
 
@@ -200,8 +200,9 @@ p {
 
 #paragraph {
     max-width: 35%;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     padding: 15px;
+    justify-content: center;
 }
 
 #partyimg {
@@ -209,6 +210,12 @@ p {
     max-height:600px;
     width: auto;
     height: auto;}
+
+#eventLanding {
+    @extend #subtitle;
+    text-align: center;
+    line-height: 90px;
+}
 
 #registry_container  {
     @include container;
