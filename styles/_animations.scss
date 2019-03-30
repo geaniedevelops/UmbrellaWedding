@@ -1,0 +1,47 @@
+// title animation
+
+@keyframes dash-inner {
+    from {
+        stroke-dashoffset: 1000;
+    }
+    to {
+        stroke-dashoffset: 0;
+        fill: white;
+    }
+}
+
+@keyframes dash-outer {
+from {
+    stroke-dashoffset: 1000;
+}
+to {
+    stroke-dashoffset: 0;
+    fill: black;
+}
+}
+
+// umbrella animation
+
+@-webkit-keyframes slidein {
+    0% { opacity: 0;}
+    100% { opacity: 1;}
+}
+
+@-moz-keyframes slidein {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes slidein { 
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+// registry bounce
+@keyframes bounceOut {
+    0%{ box-shadow: 0 0 0 4px $pink; opacity:1;}
+    25%{ box-shadow: 0 0 0 1px $pink; opacity:1;}
+    50%{ box-shadow: 0 0 0 7px $pink; opacity:1; }
+    75%{ box-shadow: 0 0 0 4px $pink; opacity:1;}
+    100%{ box-shadow: 0 0 0 5px $pink; opacity:1;}
+}

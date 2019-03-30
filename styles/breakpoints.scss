@@ -1,0 +1,93 @@
+@media only screen and (max-width: 670px)  {
+    // main container
+    
+        #main_container {
+            align-items: center;    
+        }
+        #umbrella_rumor {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    
+        .rumor {
+            font-size: 25px;
+        }
+
+        #title {
+            width: 100%;
+            margin: 0px;
+        }
+
+        .logo {
+            width: 100%;
+            opacity: 0;
+            -webkit-animation: $logoAnimation;
+            -moz-animation: $logoAnimation;
+            -o-animation: $logoAnimation;
+            animation: $logoAnimation;
+            animation-delay: 1s;
+        }
+        .path {
+            stroke-dasharray: 1000;
+            stroke-dashoffset: 1000;
+            animation: dash-outer 2s linear;
+            animation-fill-mode: forwards;
+        }
+        
+        #path-inner {
+            stroke-dasharray: 1000;
+            stroke-dashoffset: 1000;
+            animation: dash-inner 2s linear;
+            animation-fill-mode: forwards;
+        }
+        .rumor .letter {
+            margin-top: 0;
+        }
+        
+    // registry container
+    #registry_container {
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .headline {
+        font-size: 70px;
+        margin: none;
+    }
+
+    #links {
+        align-content: center;
+        img {
+            width: 70px;
+            height: 70px;
+            padding: 2px;
+            background-color: black;
+        }
+    }
+
+    // photo container
+    
+
+    #text {
+        font-size: 15px;
+    }
+
+    #event {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #paragraph {
+        max-width: 100%;
+        flex-wrap: wrap;
+        p {
+        font-family: $basic;
+        }
+    }
+
+    #partyimg {
+        max-width:100%;
+    }
+    
+    }

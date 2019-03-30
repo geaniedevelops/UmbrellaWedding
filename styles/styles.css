@@ -1,0 +1,452 @@
+@keyframes dash-inner {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+    fill: white;
+  }
+}
+@keyframes dash-outer {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+    fill: black;
+  }
+}
+@-webkit-keyframes slidein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes slidein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes slidein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes bounceOut {
+  0% {
+    box-shadow: 0 0 0 4px #FB50AC;
+    opacity: 1;
+  }
+  25% {
+    box-shadow: 0 0 0 1px #FB50AC;
+    opacity: 1;
+  }
+  50% {
+    box-shadow: 0 0 0 7px #FB50AC;
+    opacity: 1;
+  }
+  75% {
+    box-shadow: 0 0 0 4px #FB50AC;
+    opacity: 1;
+  }
+  100% {
+    box-shadow: 0 0 0 5px #FB50AC;
+    opacity: 1;
+  }
+}
+@font-face {
+  font-family: "LoveMarker";
+  src: url("../assets/fonts/LoveMarker.ttf") format("truetype");
+}
+@font-face {
+  font-family: "ShakaPow";
+  src: url("../assets/fonts/ShakaPow.ttf") format("truetype");
+}
+@font-face {
+  font-family: "BebasKai";
+  src: url("../assets/fonts/BebasKai.ttf") format("truetype");
+}
+.Site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.Site-content {
+  flex: 1;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  border-radius: 10px;
+  border: 5px solid black;
+}
+
+p {
+  font-family: "BebasKai";
+  font-size: 23px;
+}
+
+#main_container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+#title {
+  width: 80%;
+  margin-left: 8%;
+}
+
+#umbrella_rumor {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.logo {
+  width: 45%;
+  opacity: 0;
+  -webkit-animation: slidein 2s ease forwards;
+  -moz-animation: slidein 2s ease forwards;
+  -o-animation: slidein 2s ease forwards;
+  animation: slidein 2s ease forwards;
+  animation-delay: 4s;
+}
+
+.rumor {
+  font-weight: 100;
+  font-family: "LoveMarker";
+  color: #FB50AC;
+  font-size: 55px;
+}
+
+.rumor .letter {
+  margin-top: 60px;
+  display: inline-block;
+}
+
+.path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+  animation-timing-function: linear;
+  animation-duration: 4s;
+  animation-name: dash-outer;
+}
+
+#path-inner {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+  animation-timing-function: linear;
+  animation-duration: 4s;
+  animation-name: dash-inner;
+}
+
+#story_container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+#story {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+}
+
+.biopics {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#biopic {
+  margin: 15px;
+  height: 200px;
+  width: 200px;
+  -webkit-box-shadow: 6px 7px 0px 3px #FB50AC;
+  -moz-box-shadow: 6px 7px 0px 3px #FB50AC;
+  box-shadow: 6px 7px 0px 3px #FB50AC;
+}
+
+#photos_container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  align-content: center;
+  justify-content: space-evenly;
+}
+
+#photos {
+  display: flex;
+  margin: 25px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#photos img {
+  margin: 15px;
+}
+
+.photo {
+  max-width: 350px;
+  max-height: 250px;
+  width: auto;
+  height: auto;
+}
+
+#myspacelink {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+#text, #text-link {
+  font-family: "LoveMarker";
+  color: #FB50AC;
+  font-size: 30px;
+  align-self: center;
+}
+
+#text-link {
+  color: black;
+}
+#text-link:hover, #text-link:active {
+  background-color: black;
+  color: #FB50AC;
+}
+
+#party_container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+#event {
+  display: flex;
+  flex-direction: "row";
+  justify-content: space-evenly;
+  margin: 25px;
+}
+
+#subtitle {
+  font-family: "LoveMarker";
+  font-size: 25px;
+  background-color: #FB50AC;
+  padding: 2px;
+  color: white;
+  letter-spacing: 10px;
+  -webkit-box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.75);
+}
+
+#paragraph {
+  max-width: 35%;
+  flex-wrap: wrap;
+  padding: 15px;
+}
+
+#partyimg {
+  max-width: 900px;
+  max-height: 600px;
+  width: auto;
+  height: auto;
+}
+
+#registry_container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-evenly;
+  margin-top: 40px;
+}
+
+.headline {
+  font-family: "ShakaPow";
+  font-size: 150px;
+  margin: 0px 40px 0px 40px;
+  align-self: center;
+  letter-spacing: 15px;
+  color: #FB50AC;
+  text-shadow: 0 1px 0px black, 1px 0 0px black, 1px 2px 1px black, 2px 1px 1px black, 2px 3px 2px black, 3px 2px 2px black, 3px 4px 2px black, 4px 3px 3px black, 4px 5px 3px black, 5px 4px 2px black, 5px 6px 2px black, 6px 5px 2px black, 6px 7px 1px black, 7px 6px 1px black, 7px 8px 0px black, 8px 7px 0px black, 2px 2px 1px rgba(0, 0, 0, 0);
+}
+
+#links {
+  display: flex;
+  margin: 25px;
+  justify-content: center;
+}
+#links img {
+  margin: 15px;
+  height: 200px;
+  width: 200px;
+  -webkit-box-shadow: 6px 7px 0px 3px #FB50AC;
+  -moz-box-shadow: 6px 7px 0px 3px #FB50AC;
+  box-shadow: 6px 7px 0px 3px #FB50AC;
+}
+#links img:hover {
+  cursor: pointer;
+  animation: bounceOut 0.4s linear;
+}
+
+#video_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  display: flex;
+}
+
+.footer_content {
+  height: 40px;
+  width: 110%;
+  justify-content: stretch;
+  background-color: black;
+}
+
+@media only screen and (max-width: 670px) {
+  #main_container {
+    justify-content: center;
+  }
+
+  #umbrella_rumor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .rumor {
+    font-size: 25px;
+  }
+
+  #title {
+    width: 100%;
+    margin: 0px;
+  }
+
+  .logo {
+    width: 100%;
+    opacity: 0;
+    -webkit-animation: slidein 2s ease forwards;
+    -moz-animation: slidein 2s ease forwards;
+    -o-animation: slidein 2s ease forwards;
+    animation: slidein 2s ease forwards;
+    animation-delay: 1s;
+  }
+
+  .path {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: dash-outer 2s linear;
+    animation-fill-mode: forwards;
+  }
+
+  #path-inner {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: dash-inner 2s linear;
+    animation-fill-mode: forwards;
+  }
+
+  .rumor .letter {
+    margin-top: 0;
+  }
+
+  .biopics {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  #biopics {
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+  }
+
+  #photos_container {
+    margin-top: 0px;
+  }
+
+  #registry_container {
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .headline {
+    font-size: 70px;
+    margin: none;
+  }
+
+  #links {
+    align-content: center;
+  }
+  #links img {
+    width: 80;
+    height: 80;
+    padding: 1px;
+    background-color: black;
+    -webkit-box-shadow: 3px 3px 0px 2px #FB50AC;
+    -moz-box-shadow: 3px 3px 0px 2px #FB50AC;
+    box-shadow: 3px 3px 0px 2px #FB50AC;
+  }
+
+  #portrait {
+    min-width: 100%;
+    min-height: 500px;
+  }
+
+  #text, #text-link {
+    font-size: 15px;
+  }
+
+  #event {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #paragraph {
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+  #paragraph p {
+    font-family: "BebasKai";
+  }
+
+  #partyimg {
+    max-width: 100%;
+  }
+
+  .biopics {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  #biopic {
+    height: 130px;
+    width: 130px;
+    -webkit-box-shadow: 6px 7px 0px 3px #FB50AC;
+    -moz-box-shadow: 6px 7px 0px 3px #FB50AC;
+    box-shadow: 6px 7px 0px 3px #FB50AC;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
